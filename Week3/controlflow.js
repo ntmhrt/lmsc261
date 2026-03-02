@@ -26,7 +26,6 @@ if (isAMusician) {
     print("I get it, music is hard");
 }
 
-*/
 
 let randomTemp = Math.random(); // random between 0 ~ 1
 randomTemp = ( randomTemp * 20 ) - 10; 
@@ -43,4 +42,50 @@ if (isPositive){
     print("shit");
 }else{
     print("Nobody touched the temp");
+}
+
+
+// for -> Looping
+// for ( slot 1 ; slot 2 ; ...)
+// ( declare a number |  boolean / expression)
+i += 5 // i = i + 5
+i ++ // i += 1// i = i + 1;
+
+
+for (let i = 0; i < 8; i++){
+print("I'm now " + i);
+print(" i ")
+print ("years old")
+
+}
+
+let flavors = ["A", "B", "C"];
+for (let flv = 0; flv < 3; flv += 1){
+    print("you're flavor is; " );
+    print(flavors[flv])
+}
+
+*/
+
+let flavors = ["A", "B", "C"];
+
+flavors.push("Banana Split");
+
+const numIceCreamLeft = 12;
+
+for (let customer = 0; customer < 10; customer += 1){
+    if (customer < numIceCreamLeft){
+
+    }
+
+    /*
+    print (customer);
+    */
+
+    print("you're flavor is; " );
+    print(flavors[customer % flavors.length]);
+
+
+}else {
+    print ("Sorry we're closed")
 }
