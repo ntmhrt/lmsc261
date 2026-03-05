@@ -3,7 +3,7 @@ function checkLifeSpan(hourUsed)
 {
     const maxLifeSpan = 1000;
 
-   if (typeof hourUsed != ”number”)
+   if (typeof hourUsed != "number")
      { return "please enter valid number" } 
 
    if (hourUsed < 800)
@@ -16,3 +16,8 @@ function checkLifeSpan(hourUsed)
    { return "suit no longer sage to use"}
 
 }
+
+let input = prompt("How long have you used that suit?");
+let hourUsed = Number(input);
+
+console.log(checkLifeSpan(hourUsed));
