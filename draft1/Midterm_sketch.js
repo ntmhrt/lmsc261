@@ -5,20 +5,20 @@ const drawing = (p5) => {
     p5.strokeWeight(2);
     p5.noFill();
 
-    leftButtomCoords = [p5.width * 0.2, p5.height * 0.8];
+    leftBottomCoords = [p5.width * 0.2, p5.height * 0.8];
     leftTopCoords = [p5.width * 0.2, p5.height * 0.4];
-    centerButtomCoords = [p5.width * 0.5, p5.height * 0.8 ];
+    centerBottomCoords = [p5.width * 0.5, p5.height * 0.8 ];
     centerTopCoords = [p5.width * 0.5, p5.height * 0.4 ];
-    rightButtomCoords = [p5.width * 0.7, p5.height * 0.6 ];
+    rightBottomCoords = [p5.width * 0.7, p5.height * 0.6 ];
     rightTopmCoords = [p5.width * 0.7, p5.height * 0.2 ];
 
     TopArcCoords = [p5.width * 0.7, p5.height * 0.4 ];
     TopArcStart = Math.PI;
     TopArcEnd = TopArcStart + Math.PI * 0.5
 
-    ButtomArcCoords =[p5.width * 0.7, p5.height * 0.8 ];
-    ButtomArcStart = Math.PI;
-    ButtomArcEnd = TopArcStart + Math.PI * 0.5
+    BottomArcCoords =[p5.width * 0.7, p5.height * 0.8 ];
+    BottomArcStart = Math.PI;
+    BottomArcEnd = TopArcStart + Math.PI * 0.5
     arcSize = p5.height * 0.4;
 
   };
@@ -27,24 +27,24 @@ const drawing = (p5) => {
     p5.background(230, 230, 230);
 
     p5.line(
-      leftButtomCoords[0], leftButtomCoords[1],
+      leftBottomCoords[0], leftBottomCoords[1],
       leftTopCoords[0],    leftTopCoords[1]
     );
     p5.line(
-      leftButtomCoords[0], leftButtomCoords[1],
-      centerButtomCoords[0], centerButtomCoords[1]
+      leftBottomCoords[0], leftBottomCoords[1],
+      centerBottomCoords[0], centerBottomCoords[1]
     )
     p5.line(
        leftTopCoords[0], leftTopCoords[1],
        centerTopCoords[0], centerTopCoords[1]
     )
     p5.line(
-       centerButtomCoords[0], centerButtomCoords[1],
+       centerBottomCoords[0], centerBottomCoords[1],
        centerTopCoords[0], centerTopCoords[1]
     )
     p5.line(
       rightTopmCoords[0], rightTopmCoords[1],
-      rightButtomCoords[0], rightButtomCoords[1]
+      rightBottomCoords[0], rightBottomCoords[1]
     )
 
     p5.arc(
@@ -55,7 +55,7 @@ const drawing = (p5) => {
 
     )
      p5.arc(
-        ButtomArcCoords[0], ButtomArcCoords[1],
+        BottomArcCoords[0], BottomArcCoords[1],
         arcSize, arcSize,
         TopArcStart,
         TopArcEnd
