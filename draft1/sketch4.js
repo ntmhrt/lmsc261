@@ -82,7 +82,7 @@ function drawBook(p5, x, y, w, h) {
 
 const drawing = (p5) => {
   p5.setup = () => {
-    p5.createCanvas(600, 600);
+    p5.createCanvas(600, 600); //(P5.width, P5.height)
     p5.strokeWeight(2);
     p5.noFill();
   };
@@ -95,8 +95,8 @@ const drawing = (p5) => {
     const cellH = p5.height / grid;
 
     for (let i = 0; i < grid * grid; i++) {
-      let x = (i % grid) * cellW;
-      let y = Math.floor(i / grid) * cellH;
+      let x = (i % grid) * cellW; //mod will repeat among 0 ~4
+      let y = Math.floor(i / grid) * cellH; // ex if i=0~4 ->answers will be 0, 0.25, 0.5, 0.75 -> cellH = 0
 
       drawBook(p5, x, y, cellW, cellH);
     }
