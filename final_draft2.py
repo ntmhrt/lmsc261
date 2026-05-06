@@ -59,3 +59,9 @@ main_button2 = tk.Button(root, text="Flavor group 2", command=create_pressed2)
 main_button2.pack()
 
 root.mainloop()
+
+
+
+from PIL import Image, ImageTK
+
+
